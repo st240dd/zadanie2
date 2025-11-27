@@ -1,0 +1,74 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage{polski}
+\usepackage[utf8x]{inputenc}
+\usepackage[OT4]{fontenc}
+\usepackage[a4paper,
+            inner=1cm,
+            outer=1cm,
+            top=1cm,
+            bottom=1.6cm]{geometry}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[backend=bibtex,style=authoryear]{biblatex}
+\usepackage{fancyhdr}
+\addbibresource{sample.bib}
+
+\title{Zadanie}
+\author{Dawid Drożdż}
+\date{2025.11.18}
+
+\linespread{1}
+
+\fancypagestyle{plain}{
+\setlength{\headheight}{35pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[l]{\leftmark}
+\fancyhead[c]{Dawid Drożdż}
+\fancyfoot[c]{\thepage}
+}
+
+\setlength{\headheight}{35pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[l]{\leftmark}
+\fancyhead[c]{Dawid Drożdż}
+\fancyfoot[c]{\thepage}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Zadanie na ocenę z przedmiotu technologie informacyjne LAB
+zadanie zawiera:
+
+\begin{itemize}
+ \item Stronę tytułową
+ \item Streszczenie
+ \item Podpisanego autora tekstu
+ \item Datę powstania dokumentu
+ \item Ilustrację
+ \item Tabelę
+ \item Listy
+ \item Spis treści
+ \item Bibliografię
+ \item Nagłówek
+\end{itemize}
+
+\end{abstract}
+
+\tableofcontents
+
+\part{Zadanie}
+
+\input{rozdzial1.tex}
+\input{rozdzial2.tex}
+\input{rozdzial3.tex}
+\input{rozdzial4.tex}
+\input{rozdzial5.tex}
+
+\end{document}
